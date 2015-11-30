@@ -1,0 +1,418 @@
+
+body
+{
+	background-color: #ffffff;
+	background: url("../images/bg.jpg") repeat scroll 0 0 transparent;
+	margin: 0;
+	padding: 0;
+}
+
+#main
+{
+	/*border:1px solid #EEEEEE;*/
+	width: 1100px;
+	/*height: 650px;*/
+	/*height : inherit;*/
+	margin-left:auto;
+  	margin-right:auto;
+  	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	/*background-image: url(../images/back.jpg);*/
+	/*overflow-x: auto;*/
+	overflow: hide;
+}
+
+#head
+{
+	background: url("../images/bg.jpg") repeat scroll 0 0 transparent;
+    height: 80px;
+    position: fixed;
+    width: 1100px;
+    z-index: 100000;
+/*	border:5px solid #000000;*/
+}
+
+#main_left
+{
+	/*border:5px solid #000000;*/
+	float: left;
+    position: relative;
+    top: 90px;
+    width: 550px;
+	
+}
+#main_right
+{
+	/*border:5px solid #000000;*/
+	width: 500px;
+	float: right;
+	/*position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;*/
+}
+#stat
+{
+	/*left: 100px;*/
+    position: relative;
+    top: 20px;
+    float: right;
+    width: 170px;
+    margin-right: 50px;
+ 
+}
+#stat_done
+{
+	color: #33ff66;
+	font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	margin: 10px;
+}
+
+span#stat_done span {position: absolute; left: -9999px;
+  margin: 20px 0 0 0px; padding: 3px 3px 3px 3px;
+  border-style:none; z-index: 6;
+  
+  }
+span#stat_done:hover {text-decoration: none; background: #f9f9f9; z-index: 6;
+font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #666666;
+ }
+span#stat_done:hover span {left: 2%; background: #ffffff;} 
+span#stat_done span {position: absolute; left: -9999px;
+  margin: 4px 0 0 0px; padding: 3px 3px 3px 3px; }
+span#stat_done:hover span {margin: 30px 0 0 10px; background: #f9f9f9; z-index:6;} 
+
+
+#stat_today
+{
+	color: #FF9933;
+	font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	margin: 10px;
+}
+#stat_overdue
+{
+	color: #B00000;
+	font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	margin: 10px;
+}
+.stat_text
+{
+	color:#666666;
+	font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+#input_form
+{
+	position: relative;
+	display: inline-block;
+	left: 45px;
+	top: 20px;
+	/*border:1px solid #000000;*/
+	width:485px;
+	height: 50px;
+	
+}
+
+#logo
+{
+	float: right;
+}
+
+a.add{
+	display:block;
+	width:30px;
+	height:30px;
+	float:right;
+	text-indent:-9999px;
+	margin:3px;
+	outline:none;
+	background:url("../images/add.png") no-repeat center right;
+	z-index: 0;
+}
+
+
+		
+#my_p
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color: #33ff66;
+	font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+	
+#my_p2
+{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	color: #33ff66;
+	font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+			
+#task_box
+{
+	position: relative;
+	border:1px solid #CCCCCC;
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:20px;
+	padding:3px 4px;
+	width:435px;
+	height: 50px;
+	float: left;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	outline : none;
+}
+	
+#task_list
+{
+}
+
+ul.todoList
+{
+	top: 0px;
+	left: 0px;
+	width:490px;
+	/*height: 400px;*/
+	position:relative;
+	/*overflow: auto;
+/*border:1px solid #EEEEEE;*/
+}
+
+ul.todoList li{
+	background-color:#F9F9F9;
+	border:1px solid #EEEEEE;
+	list-style:none;
+	margin:6px;
+	padding:6px 9px;
+	position:relative;
+	cursor:n-resize;
+	z-index: 2;
+
+	/* CSS3 text shadow and rounded corners: */
+	
+	text-shadow:1px 1px 0 white;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
+.todo .text{
+	color:#777777;
+	font-size:20px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.todo .actions{
+	position:absolute;
+	right:7px;
+	top:6px;
+}
+
+.todo .actions a{
+	display:block;
+	width:16px;
+	height:16px;
+	float:left;
+	text-indent:-9999px;
+	margin:3px;
+	outline:none;
+}
+
+.todo .actions a.delete
+{
+	background:url("../images/del2.png") no-repeat center center;
+}
+
+#item_box{
+	border:1px solid #CCCCCC;
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:20px;
+	padding:3px 4px;
+	width:400px;
+	height: 40px;
+	text-align: left;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	outline : none;
+}
+
+.todo .actions a.edit{
+	background:url("images/del.png") no-repeat center center;
+}
+			
+#text_top
+{
+	position: relative;
+	z-index: 4;
+}
+	
+.details
+{
+	width: 450px;
+	height: 100px;
+	background-color:#F9F9F9;
+	color:#777777;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:16px;
+}
+
+/* date Picker */	
+
+a.date_href
+{
+	font-size: 12px;
+	display: block;
+	outline:none;
+	margin: 3px;
+	width: 120px;
+}
+
+a.date_href:link {text-decoration: none;
+color: #CECB8A;
+}
+a.date_href:visited {text-decoration: none;
+color: #CECB8A;
+}
+a.date_href:active {text-decoration: none;
+color: #CECB8A;}	
+
+.date_today
+{
+	margin-left: 10px;
+	width: 180px;
+	font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+}
+
+.date_tomorrow
+{
+	width: 180px;
+    position: relative;
+    font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+}
+#date_picker
+{
+	display:inline;
+	margin-right: 15px;
+}
+
+.date_done
+{
+	width: 180px;
+	font-family: Thoma, verdana, Arial, Helvetica, sans-serif;
+}
+
+#date_picker input
+{
+	/*-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;*/
+	text-align: center;
+ 	width: 205px;
+
+	border:1px solid #CCCCCC;
+	font-family:Arial,Helvetica,sans-serif;
+	/*font-size:20px;
+	padding:3px 4px;*/
+	color: #777777;
+	height: 30px;
+	margin-top: 15px;
+
+}
+#single_detail
+{
+	
+}
+#account
+{
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:16px;
+	 /*  left: 900px;*/
+	position: relative;
+	display: inline-block;
+	left: 300px;
+	top: -5px;
+
+}
+#logout
+{
+	margin : 5px;
+	color: #666666;
+    text-decoration: none;
+
+}
+
+#dropdown
+{
+	display: inline-block;
+	left: 180px;
+	position: relative;
+	top: 12px;
+	width: 150px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:16px;
+}
+
+/* Front page : Index.php */
+
+@font-face 
+{
+   font-family: Black-Chancery;
+   src: url(BLKCHCRY.TTF)
+}
+
+#login_msg
+{
+	height: 150px;
+	width: 520px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -145px;
+	margin-left: -260px;
+}
+#login_msg P
+{
+	color:#666666;
+	font-family: Black Chancery, BlackChancery, Black-Chancery, sans-serif, Arial, Helvetica;
+	font-size:34px;
+}
+#button
+{
+	left: 130px;
+    position: relative;
+	
+}
+
+#error_msg
+{
+	border: 1px solid red;
+    color: #666666;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+#feedback_href
+{
+  	color: #696969;
+    font-size: 18px;
+    left: 1100px;
+    position: fixed;
+    text-decoration: none;
+    top: 600px;
+}
